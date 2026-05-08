@@ -110,47 +110,25 @@ Production-style cloud analytics engineering project focused on modern ELT pipel
 
 flowchart LR
 
+&#x20;   A\["Raw NYC Taxi Data"] --> B\["Staging Layer"]
 
+&#x20;   B --> C\["Intermediate Transformations"]
 
-&#x20;   A\[Raw NYC Taxi Data] --> B\[Staging Layer]
+&#x20;   C --> D\["Fact Tables"]
 
+&#x20;   C --> E\["Dimension Tables"]
 
-
-&#x20;   B --> C\[Intermediate Transformations]
-
-
-
-&#x20;   C --> D\[Fact Tables]
-
-
-
-&#x20;   C --> E\[Dimension Tables]
-
-
-
-&#x20;   D --> F\[Analytics Marts]
-
-
+&#x20;   D --> F\["Analytics Marts"]
 
 &#x20;   E --> F
 
+&#x20;   F --> G\["Reporting and Analytics"]
 
-
-&#x20;   F --> G\[Reporting \& Analytics]
-
-
-
-&#x20;   H\[Docker Environment] --> I\[dbt Pipeline]
-
-
+&#x20;   H\["Docker Environment"] --> I\["dbt Pipeline"]
 
 &#x20;   I --> B
 
 ```
-
-
-
-\---
 
 
 
