@@ -94,7 +94,7 @@ Production-style cloud analytics engineering project focused on modern ELT pipel
 
 
 
-\---
+
 
 
 
@@ -104,31 +104,31 @@ Production-style cloud analytics engineering project focused on modern ELT pipel
 
 \## High-Level Architecture
 
+
+
 ```mermaid
 
 flowchart LR
 
-&#x20;   raw\["Raw data"] --> staging\["Staging"]
+raw\["Raw data"] --> staging\["Staging"]
 
-&#x20;   staging --> intermediate\["Intermediate"]
+staging --> intermediate\["Intermediate"]
 
-&#x20;   intermediate --> facts\["Facts"]
+intermediate --> facts\["Facts"]
 
-&#x20;   intermediate --> dimensions\["Dimensions"]
+intermediate --> dimensions\["Dimensions"]
 
-&#x20;   facts --> marts\["Analytics marts"]
+facts --> marts\["Analytics marts"]
 
-&#x20;   dimensions --> marts
+dimensions --> marts
 
-&#x20;   marts --> reporting\["Reporting"]
+marts --> reporting\["Reporting"]
 
-&#x20;   docker\["Docker"] --> dbt\["dbt pipeline"]
+docker\["Docker"] --> dbt\["dbt pipeline"]
 
-&#x20;   dbt --> staging
+dbt --> staging
 
 ```
-
-
 
 
 
