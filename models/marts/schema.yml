@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: dim_zones
+  - name: dim_vendors
+  - name: fct_trips
+  - name: fct_monthly_zone_revenue

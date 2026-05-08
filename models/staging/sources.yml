@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw
+    tables:
+      - name: green_tripdata
+        config:
+          external_location: "read_parquet('data/green/*.parquet')"
+
+      - name: yellow_tripdata
+        config:
+          external_location: "read_parquet('data/yellow/*.parquet')"
+
+      - name: fhv_tripdata
+        config:
+          external_location: "read_csv_auto('data/fhv/*.csv.gz')"
+
+      
