@@ -4,7 +4,7 @@ A learning-oriented analytics project with staging, intermediate, fact, and dime
 
 ## Scope and provenance
 
-This repository follows the NYC taxi / Zoomcamp learning context, including the `taxi_rides_ny` dbt project and course-oriented local infrastructure. It is an adapted learning artifact, not a verified production warehouse. See [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp).
+This repository follows the NYC taxi course-based learning context, including the `taxi_rides_ny` dbt project and course-oriented local infrastructure. It is an adapted learning artifact, not a verified production warehouse. See [DataTalksClub](https://github.com/DataTalksClub).
 
 The reviewable work is the SQL model structure, source configuration, and development environment. Exact attribution of upstream examples versus personal changes has not been reconstructed.
 
